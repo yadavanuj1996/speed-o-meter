@@ -1,0 +1,1278 @@
+#main-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*CSS for scoremeter*/ 
+#scorer-holder {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#scorer-background {
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 200px 200px 0 0;
+  overflow: hidden;
+  border: 10px solid #fdad2c;
+}
+
+#scorer-color-zone {
+  border-radius: 200px 200px 0 0;
+  margin: 0;
+  background: red;
+  width: 200px;
+  height: 100px;
+  transform-origin: 50% 100%;
+  animation-name: color-fill;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  position: relative;
+  animation-iteration-count: 10;
+}
+
+.scorer-tick {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 4px;
+  transform-origin: top center;
+  transform: rotate(0deg);
+  background-color: #fdad2c;
+}
+
+@keyframes color-fill {
+  0% {
+    background-color: green;
+    transform: rotate(180deg);
+  }
+  33% {
+    background-color: yellow;
+    transform: rotate(228deg);
+  }
+  66% {
+    background-color: orange;
+    transform: rotate(276deg);
+  }
+  100% {
+    background-color: #f35366;
+    transform: rotate(324deg);
+  }
+}
+
+/* Ticker 2*/
+
+#scorer-holder-2 {
+  width: 200px;
+  position: relative;
+}
+
+#scorer-background-2 {
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 200px 200px 0 0;
+  overflow: hidden;
+  border: 2px solid #FDAE3D;;   
+}
+
+#scorer-color-zone-2 {
+  border-radius: 200px 200px 0 0;
+  margin: 0;
+  background: red;
+  width: 200px;
+  height: 100px;
+  transform-origin: 50% 100%;
+  animation-name: color-fill-2;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.scorer-tick-2 {
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
+  width: 80px;
+  height: 4px;
+  background-color: black;
+  border-top-left-radius: 160px;
+  transform: rotate(-0deg);
+  animation-name: ticker-mover-2;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes color-fill-2 {
+  0% {
+    background-color: #ADD732;
+    transform: rotate(180deg);
+  }
+  33% {
+    background-color: #FBE939;
+    transform: rotate(240deg);
+  }
+  66% {
+    background-color: #F5933C;
+    transform: rotate(300deg);
+  }
+  100% {
+    background-color: #ED3F3C;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ticker-mover-2 {
+  0% {
+    transform-origin: bottom right;
+    transform: rotate(0deg);
+  }
+  33% {
+    transform-origin: bottom right;
+    transform: rotate(60deg);
+  }
+  66% {
+    transform-origin: bottom right;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform-origin: bottom right;
+    transform: rotate(180deg);
+  }
+}
+ 
+
+
+/* Ticker 4 */
+
+@keyframes color-fill-4 {
+  0% {
+    background-color: #923CF5;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+  }
+  33% {
+    background-color: #923CF5;
+    transform-origin: bottom center;
+    transform: rotate(220deg);
+  }
+  66% {
+    background-color: #923CF5;
+    transform-origin: bottom center;
+    transform: rotate(260deg);
+  }
+  100% {
+    background-color: #923CF5;
+    transform-origin: bottom center;
+    transform: rotate(300deg);
+  }
+}
+
+@keyframes reverse-rotation-4 {
+  0% {
+    transform-origin: bottom center;
+    transform: rotate(-180deg);
+  }
+  33% {
+    transform-origin: bottom center;
+    transform: rotate(-220deg);
+  }
+  66% {
+    transform-origin: bottom center;
+    transform: rotate(-260deg);
+  }
+  100% {
+    transform-origin: bottom center;
+    transform: rotate(-300deg);
+  }
+}
+
+@keyframes ticker-mover-4 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(0deg);
+  }
+  33% {
+    transform-origin: right center;
+    transform: rotate(40deg);
+  }
+  66% {
+    transform-origin: right center;
+    transform: rotate(80deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(120deg);
+  }
+}
+
+
+#scorer-outer-div-4 {
+  width: 350px;
+  height: 175px;
+  background-color: #fff;
+}
+
+#scorer-outer-background-4 {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 30em 30em 0 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-top: 1px solid #923CF5;
+  border-left: 1px solid #923CF5;
+  border-right: 1px solid #923CF5;
+  border-bottom: 1px solid #923CF5;
+  
+}
+
+#scorer-inner-div-4 {
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation-name: color-fill-4;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  border: none;
+ 
+}
+
+#scorer-inner-background-4 {
+  
+  width: 75%;
+  height: 75%;
+  background-color: #ffffff;
+  border-radius: 30em 30em 0 0;
+  border: 1px solid #923CF5;
+  border-bottom: none !important;
+  animation-name: reverse-rotation-4;
+  animation-duration: 4s;
+  animation-iteration-count:infinite;
+  
+}
+.scorer-tick-4 {
+  position: absolute;
+  bottom: -20px;
+  left: -0%;
+  width: 50%;
+  height: 5px;
+  background-color: #923CF5;
+  animation-name: ticker-mover-4;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+
+
+#test{
+  background-color: red;
+  width: 35%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30em 30em 0 0;
+  border-top: 2px solid #3378FA;
+  border-left: 2px solid #3378FA;
+  border-right: 2px solid #3378FA;
+
+}
+
+/* Score Meter 5 */
+#score-meter-5{
+  width: 20px;
+  height: 10px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border: 140px solid #ADD732;
+  border-bottom: 0;
+  position: relative;
+}
+.scorer-tick-5 {
+  position: absolute;
+  bottom: 2px;
+  left: -70px;
+  width: 80px;
+  height: 5px;
+  background-color: #ffffff;
+  transform: rotate(-0deg);
+  animation-name: ticker-mover-5;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+@keyframes ticker-mover-5 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(0deg);
+  }
+  33% {
+    transform-origin: right center;
+    transform: rotate(120deg);
+  }
+  66% {
+    transform-origin: right center;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(120deg);
+  }
+}
+
+/* Ticker 6*/
+#score-meter-6{
+  width: 300px;
+  height: 150px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+#score-6-inner-div{
+  position: absolute;
+  left: 20%;
+  top: 40%;
+  width: 60%;
+  height: 60%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #ffffff;
+  z-index: 2;
+}
+#score-6-inner-div-2{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #FFCA3D;
+  transform-origin: bottom center;
+  transform: rotate(-130deg);
+  z-index: 0;
+}
+
+#score-6-inner-div-3{
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  z-index: 4;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  background-color: #0093D7;
+  transform-origin: bottom center;
+  transform: rotate(130deg);
+  z-index: 0
+}
+
+#score-6-inner-div-4{
+  position: absolute;
+  left: 50px;
+  top: -2px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 140px solid #A3CD3B;
+  transform: rotate(180deg);
+}
+
+.scorer-tick-6 {
+  position: absolute;
+  top: 40%;
+  left: -250%;
+  width: 300%;
+  height: 5px;
+  background-color: #000000;
+  animation-name: ticker-mover-6;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+#score-6-inner-div-5{
+  position: absolute;
+  left: 45%;
+  top: 80%;
+  width: 10%;
+  height: 20%;
+  border-radius: 50%;
+  background-color: #000000;
+  z-index: 2;
+}
+
+@keyframes ticker-mover-6 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(0deg);
+  }
+  33% {
+    transform-origin: right center;
+    transform: rotate(120deg);
+  }
+  66% {
+    transform-origin: right center;
+    transform: rotate(120deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(120deg);
+  }
+}
+
+/* Ticker 7 */
+
+#score-meter-7{
+  width: 280px;
+  height: 280px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-radius:50%;
+  border: 4px solid white;
+  position: relative;
+  background-color: #000000;
+}
+#scorer-7-main-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  width: 130px;
+  height: 5px;
+  background-color: #3eedf2;
+  transform-origin: right center;
+  transform-origin: right center;
+  transform: rotate(17deg);
+  z-index: 3;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  animation-name: ticker-mover-7;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scorer-7-tick-1{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  background-color: #000000;
+  transform-origin: right center;
+  transform: rotate(-30deg);
+  border-left:20px solid #3eedf2;
+}
+#scorer-7-tick-2{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(0deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-3{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(30deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-4{
+   position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(60deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-5{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(90deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-6{
+   position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(120deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-7{
+   position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(150deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-8{
+   position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(180deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-tick-9{
+   position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 120px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(210deg);
+  border-left:20px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-1{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(-20deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-2{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(-10deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-3{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(10deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-4{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(20deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-5{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(40deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-6{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(50deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-7{
+  z-index: 15;
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(70deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-8{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(80deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-9{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(100deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-10{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(110deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-11{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(130deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-12{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(140deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-13{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(160deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-14{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(170deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-15{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(190deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+#scorer-7-sub-tick-16{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  transform: rotate(200deg);
+  border-left:10px solid #3eedf2;
+  background-color: #000000;
+}
+.scorer-7-text{
+   position: absolute;
+  bottom: -25px;
+  left: 10px;
+  color: #3eedf2; 
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+#scorer-7-number p{
+   position: absolute;
+  width: 30%;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid #3eedf2;
+  bottom: 10%;
+  left: 33%;
+  color: #3eedf2; 
+}
+#scorer-7-fill-div{
+  z-index:2;
+  position: absolute;
+  width: 270px;
+  height: 135px;
+  background: transparent;
+  left: 0px;
+  top:0px;
+  border: 5px solid #3eedf2;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom: none;
+  transform-origin: bottom center;
+  transform: rotate(-30deg);
+
+}
+#scorer-7-fill-danger-div{
+  z-index:0;
+  position: absolute;
+  width: 270px;
+  height: 135px;
+  background: transparent;
+  left: 0px;
+  top:0px;
+  border: 5px solid red;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom: none;
+  transform-origin: bottom center;
+  transform: rotate(30deg);
+}
+
+@keyframes ticker-mover-7 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform-origin: right center;
+    transform: rotate(60deg);
+  }
+  50% {
+    transform-origin: right center;
+    transform: rotate(110deg);
+  }
+  75% {
+    transform-origin: right center;
+    transform: rotate(150deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(170deg);
+  }
+}
+
+/* Ticker 8 */
+
+#score-meter-8{
+  width: 280px;
+  height: 280px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-radius:50%;
+  border: 4px solid white;
+  position: relative;
+  background-color: #000000;
+  overflow: hidden !important;
+}
+#scorer-8-main-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  width: 130px;
+  height: 5px;
+  background-color: #3eedf2;
+  transform-origin: right center;
+  transform-origin: right center;
+  z-index: 11;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotate(300deg);
+  animation-name: ticker-mover-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scorer-8-kwh-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 10px;
+  width: 130px;
+  height: 5px;
+  background-color: #FA543F;
+  transform-origin: right center;
+  transform-origin: right center;
+  z-index: 11;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotate(180deg);
+  animation-name: kwh-ticker-mover-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.scorer-tick-8{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 125px;
+  height: 5px;
+  background-color: #000000;
+  transform-origin: right center;
+  border-left:15px solid #696a6d;
+  z-index:10;
+}
+#scorer-8-tick-1{
+  transform: rotate(-60deg);
+  background-color: #494a4c;
+  opacity: 1;
+  height: 2px
+}
+#scorer-8-tick-2{
+  transform: rotate(-40deg);
+}
+
+#scorer-8-tick-3{
+  transform: rotate(-20deg);
+}
+#scorer-8-tick-4{
+  transform: rotate(0deg);
+}
+#scorer-8-tick-5{
+  transform: rotate(20deg);
+ }
+#scorer-8-tick-6{
+  transform: rotate(40deg);
+}
+#scorer-8-tick-7{
+  transform: rotate(60deg);
+}
+#scorer-8-tick-8{
+  transform: rotate(80deg);
+}
+.scorer-sub-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  border-left:10px solid #494a4c;
+  background-color: #000000;
+  z-index:10;
+}
+#scorer-8-sub-tick-1{
+  transform: rotate(-50deg);
+}
+#scorer-8-sub-tick-2{
+  transform: rotate(-30deg);
+}
+#scorer-8-sub-tick-3{
+  transform: rotate(-10deg);
+}
+#scorer-8-sub-tick-4{
+  transform: rotate(10deg);
+}
+#scorer-8-sub-tick-5{
+  transform: rotate(30deg);
+}
+#scorer-8-sub-tick-6{
+  transform: rotate(50deg);
+}
+#scorer-8-sub-tick-7{
+  transform: rotate(70deg);
+}
+#scorer-8-sub-tick-8{
+ transform: rotate(90deg);
+ background-color: #494a4c;
+ opacity: 0.3;
+}
+
+.scorer-8-reverse-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 125px;
+  height: 5px;
+  background-color: #000000;
+  transform-origin: right center;
+  border-left:15px solid #696a6d;
+  z-index: 10;
+}
+
+#scorer-8-reverse-tick-1{
+  transform: rotate(105deg);
+}
+
+#scorer-8-reverse-tick-2{
+  transform: rotate(120deg);
+}
+
+#scorer-8-reverse-tick-3{
+  transform: rotate(135deg);
+}
+
+#scorer-8-reverse-tick-4{
+  transform: rotate(150deg);
+}
+
+#scorer-8-reverse-tick-5{
+  transform: rotate(165deg);
+}
+
+#scorer-8-reverse-tick-6{
+  transform: rotate(180deg);
+}
+
+#scorer-8-reverse-tick-7{
+  transform: rotate(195deg);
+}
+
+#scorer-8-reverse-tick-8{
+  transform: rotate(210deg);
+}
+
+#scorer-8-reverse-tick-9{
+  transform: rotate(225deg);
+}
+
+#scorer-8-reverse-tick-10{
+  transform: rotate(240deg);
+  background-color: #494a4c;
+  opacity: 1;
+  height: 2px
+}
+
+.scorer-8-text{
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+  color: #bdbebf; 
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+#scorer-8-number p{
+   position: absolute;
+  width: 30%;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid #3eedf2;
+  bottom: 10%;
+  left: 33%;
+  color: #696a6d; 
+}
+#scorer-8-fill-div{
+  z-index:11;
+  position: absolute;
+  width: 265px;
+  height: 135px;
+  background: transparent;
+  top: -4px;
+  left: 0px;
+  border: 8px solid #3DDAF5;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom: none;
+  transform-origin: bottom center;
+  transform: rotate(-30deg);
+  
+  animation-name: fill-div-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scorer-8-fill-div-shadow-cover{
+  z-index:12;
+  position: absolute;
+  width: 265px;
+  height: 135px;
+  background: transparent;
+  top: -9px;
+  left: -4px;
+  border: 10px solid #000000;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom: none;
+  transform-origin: bottom center;
+  transform: rotate(-240deg);
+  
+}
+#scorer-8-fill-danger-div{
+  z-index: 14;
+  position: absolute;
+  width: 268px;
+  height: 135px;
+  background: transparent;
+  left: -5px;
+  top: -3px;
+  border: 8px solid #FA543F;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-bottom: none;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform-origin: bottom center;
+  transform: rotate(105deg);
+  animation-name: kwh-fill-div-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scorer-8-fill-danger-div-shadow-cover{
+  z-index:15; 
+  position: absolute;
+  width: 259px;
+  height: 135px;
+  background: transparent;
+  left: -2px;
+  top:-10px;
+  border: 10px solid #000000;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom: none;
+  transform-origin: bottom center;
+  transform: rotate(180deg);  
+  animation-name: kwh-shadow-div-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes fill-div-8 {
+  0% {
+    transform-origin: bottom center;
+    transform: rotate(120deg);
+   
+  }
+  20% {
+    transform-origin: bottom center;
+    transform: rotate(170deg);
+  }
+  50% {
+    transform-origin: bottom center;
+    transform: rotate(200deg);
+  }
+  66%{
+    transform-origin: bottom center;
+    transform: rotate(220deg);
+  }
+  75% {
+    transform-origin: bottom center;
+    transform: rotate(205deg);
+  }
+  100% {
+    transform-origin: bottom center;
+    transform: rotate(190deg);
+  }
+}
+
+@keyframes ticker-mover-8 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(-60deg);
+  }
+  20% {
+    transform-origin: right center;
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform-origin: right center;
+    transform: rotate(20deg);
+  }
+  66%{
+    transform-origin: right center;
+    transform: rotate(40deg);
+  }
+  75% {
+    transform-origin: right center;
+    transform: rotate(25deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes kwh-fill-div-8 {
+  0% {
+    transform-origin: bottom center;
+    transform: rotate(-180deg);
+  }
+  20% {
+    
+    transform-origin: bottom center;
+    transform: rotate(-255deg);
+    
+  }
+  50% {
+  
+    transform-origin: bottom center;
+    transform: rotate(-260deg);
+  }
+  66%{
+    transform-origin: bottom center;
+    transform: rotate(-260deg);
+  }
+ 75% {
+    visibility: hidden;
+    transform-origin: bottom center;
+    transform: rotate(-180deg);    
+    border: 8px solid #FA543F;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-bottom: none;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+   76% {
+    border: 8px solid #59d63e;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-bottom: none;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    visibility: hidden;
+    transform-origin: bottom center;
+    transform: rotate(135deg);    
+  }
+  100% {
+    
+    border: 8px solid #59d63e;
+    border-top-left-radius: 360px;
+    border-top-right-radius: 360px;
+    border-bottom: none;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    visibility: visible;
+    transform-origin:bottom center;
+    transform: rotate(195deg);
+  }
+}
+@keyframes kwh-shadow-div-8 {
+  
+  10% {
+    border-top-color: transparent;
+    border-left-color: black;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+  }
+  11% {
+    border-top-color: black;
+    border-left-color: #FA543F;
+    transform-origin: bottom center;
+    transform: rotate(135deg);
+  }
+  70%{
+    border-top-color: black;
+    border-left-color: #FA543F;
+    transform-origin: bottom center;
+    transform: rotate(135deg);
+    
+  }
+  71%{
+    border-top-color: transparent;
+    border-left-color: black;
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform-origin: bottom center;
+    transform: rotate(180deg);
+    
+  }
+}
+
+
+@keyframes kwh-ticker-mover-8 {
+  0% {
+    transform-origin: right center;
+    transform: rotate(180deg);
+  }
+  20% {
+    transform-origin: right center;
+    transform: rotate(105deg);
+  }
+  50% {
+    transform-origin: right center;
+    transform: rotate(100deg);
+  }
+  66%{
+    transform-origin: right center;
+    transform: rotate(100deg);
+  }
+  75% {
+    transform-origin: right center;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform-origin:right center;
+    transform: rotate(240deg);
+  }
+}
