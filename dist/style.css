@@ -15,7 +15,7 @@
 #scorer-background {
   width: 200px;
   height: 100px;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 200px 200px 0 0;
   overflow: hidden;
   border: 10px solid #fdad2c;
@@ -33,7 +33,7 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   position: relative;
-  animation-iteration-count: 10;
+  animation-iteration-count: infinite;
 }
 
 .scorer-tick {
@@ -458,7 +458,7 @@
   border-radius:50%;
   border: 4px solid white;
   position: relative;
-  background-color: #000000;
+  background-color: #090909;
 }
 #scorer-7-main-tick{
   position: absolute;
@@ -478,280 +478,101 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-#scorer-7-tick-1{
-  position: absolute;
+.scorer-7-ticks{
+   position: absolute;
   bottom: 50%;
   left: 0px;
   width: 120px;
   height: 2px;
-  background-color: #000000;
+  background-color: #090909;
   transform-origin: right center;
-  transform: rotate(-30deg);
   border-left:20px solid #3eedf2;
+}
+#scorer-7-tick-1{
+  transform: rotate(-30deg);
 }
 #scorer-7-tick-2{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(0deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-3{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(30deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-4{
-   position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(60deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-5{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(90deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-6{
-   position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(120deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-7{
-   position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(150deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-8{
-   position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 120px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(180deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-tick-9{
+  transform: rotate(210deg);
+}
+.scorer-7-sub-ticks{
    position: absolute;
   bottom: 50%;
   left: 0px;
-  width: 120px;
+  width: 130px;
   height: 2px;
-  transform-origin: right center;
-  transform: rotate(210deg);
-  border-left:20px solid #3eedf2;
-  background-color: #000000;
+  transform-origin: right center; 
+  border-left:10px solid #3eedf2;
+  background-color: #090909;
 }
 #scorer-7-sub-tick-1{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(-20deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-2{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(-10deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-3{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
+ 
   transform: rotate(10deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-4{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(20deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-5{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(40deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-6{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(50deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-7{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(70deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-8{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(80deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-9{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(100deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-10{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(110deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-11{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(130deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-12{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(140deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-13{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(160deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-14{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(170deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-15{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(190deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 #scorer-7-sub-tick-16{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
   transform: rotate(200deg);
-  border-left:10px solid #3eedf2;
-  background-color: #000000;
 }
 .scorer-7-text{
    position: absolute;
@@ -762,14 +583,14 @@
   transform: rotate(-90deg);
 }
 #scorer-7-number p{
+  text-align:center;
    position: absolute;
   width: 30%;
   padding: 5px;
-  font-size: 20px;
-  border: 2px solid #3eedf2;
+  font-size: 28px;
   bottom: 10%;
   left: 33%;
-  color: #3eedf2; 
+  color: white; 
 }
 #scorer-7-fill-div{
   z-index:2;
@@ -836,21 +657,19 @@
   border-radius:50%;
   border: 4px solid white;
   position: relative;
-  background-color: #000000;
+  background-color: #090909;
   overflow: hidden !important;
 }
 #scorer-8-main-tick{
   position: absolute;
   bottom: 50%;
-  left: 10px;
-  width: 130px;
-  height: 5px;
+  left: 0px;
+  width: 140px;
+  height: 3px;
   background-color: #3eedf2;
   transform-origin: right center;
   transform-origin: right center;
   z-index: 11;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
   transform: rotate(300deg);
   animation-name: ticker-mover-8;
   animation-duration: 6s;
@@ -860,178 +679,27 @@
 #scorer-8-kwh-tick{
   position: absolute;
   bottom: 50%;
-  left: 10px;
-  width: 130px;
-  height: 5px;
+  left: -2px;
+  width: 140px;
+  height: 3px;
   background-color: #FA543F;
   transform-origin: right center;
   transform-origin: right center;
   z-index: 11;
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
   transform: rotate(180deg);
   animation-name: kwh-ticker-mover-8;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.scorer-tick-8{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 125px;
-  height: 5px;
-  background-color: #000000;
-  transform-origin: right center;
-  border-left:15px solid #696a6d;
-  z-index:10;
-}
-#scorer-8-tick-1{
-  transform: rotate(-60deg);
-  background-color: #494a4c;
-  opacity: 1;
-  height: 2px
-}
-#scorer-8-tick-2{
-  transform: rotate(-40deg);
-}
 
-#scorer-8-tick-3{
-  transform: rotate(-20deg);
-}
-#scorer-8-tick-4{
-  transform: rotate(0deg);
-}
-#scorer-8-tick-5{
-  transform: rotate(20deg);
- }
-#scorer-8-tick-6{
-  transform: rotate(40deg);
-}
-#scorer-8-tick-7{
-  transform: rotate(60deg);
-}
-#scorer-8-tick-8{
-  transform: rotate(80deg);
-}
-.scorer-sub-tick{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 130px;
-  height: 2px;
-  transform-origin: right center;
-  border-left:10px solid #494a4c;
-  background-color: #000000;
-  z-index:10;
-}
-#scorer-8-sub-tick-1{
-  transform: rotate(-50deg);
-}
-#scorer-8-sub-tick-2{
-  transform: rotate(-30deg);
-}
-#scorer-8-sub-tick-3{
-  transform: rotate(-10deg);
-}
-#scorer-8-sub-tick-4{
-  transform: rotate(10deg);
-}
-#scorer-8-sub-tick-5{
-  transform: rotate(30deg);
-}
-#scorer-8-sub-tick-6{
-  transform: rotate(50deg);
-}
-#scorer-8-sub-tick-7{
-  transform: rotate(70deg);
-}
-#scorer-8-sub-tick-8{
- transform: rotate(90deg);
- background-color: #494a4c;
- opacity: 0.3;
-}
-
-.scorer-8-reverse-tick{
-  position: absolute;
-  bottom: 50%;
-  left: 0px;
-  width: 125px;
-  height: 5px;
-  background-color: #000000;
-  transform-origin: right center;
-  border-left:15px solid #696a6d;
-  z-index: 10;
-}
-
-#scorer-8-reverse-tick-1{
-  transform: rotate(105deg);
-}
-
-#scorer-8-reverse-tick-2{
-  transform: rotate(120deg);
-}
-
-#scorer-8-reverse-tick-3{
-  transform: rotate(135deg);
-}
-
-#scorer-8-reverse-tick-4{
-  transform: rotate(150deg);
-}
-
-#scorer-8-reverse-tick-5{
-  transform: rotate(165deg);
-}
-
-#scorer-8-reverse-tick-6{
-  transform: rotate(180deg);
-}
-
-#scorer-8-reverse-tick-7{
-  transform: rotate(195deg);
-}
-
-#scorer-8-reverse-tick-8{
-  transform: rotate(210deg);
-}
-
-#scorer-8-reverse-tick-9{
-  transform: rotate(225deg);
-}
-
-#scorer-8-reverse-tick-10{
-  transform: rotate(240deg);
-  background-color: #494a4c;
-  opacity: 1;
-  height: 2px
-}
-
-.scorer-8-text{
-  position: absolute;
-  bottom: -25px;
-  left: 10px;
-  color: #bdbebf; 
-  transform-origin: center;
-  transform: rotate(-90deg);
-}
-#scorer-8-number p{
-   position: absolute;
-  width: 30%;
-  padding: 5px;
-  font-size: 20px;
-  border: 2px solid #3eedf2;
-  bottom: 10%;
-  left: 33%;
-  color: #696a6d; 
-}
 #scorer-8-fill-div{
   z-index:11;
   position: absolute;
-  width: 265px;
+  width: 268px;
   height: 135px;
   background: transparent;
-  top: -4px;
+  top: -3px;
   left: 0px;
   border: 8px solid #3DDAF5;
   border-top-left-radius: 360px;
@@ -1102,6 +770,167 @@
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+.scorer-tick-8{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 125px;
+  height: 5px;
+  transform-origin: right center;
+  border-left:15px solid #696a6d;
+  z-index:10;
+}
+#scorer-8-tick-1{
+  transform: rotate(-60deg);
+  background-color: #494a4c;
+  opacity: 1;
+  height: 2px;
+  z-index: 16;
+}
+#scorer-8-tick-2{
+  transform: rotate(-40deg);
+}
+
+#scorer-8-tick-3{
+  transform: rotate(-20deg);
+}
+#scorer-8-tick-4{
+  transform: rotate(0deg);
+}
+#scorer-8-tick-5{
+  transform: rotate(20deg);
+ }
+#scorer-8-tick-6{
+  transform: rotate(40deg);
+}
+#scorer-8-tick-7{
+  transform: rotate(60deg);
+}
+#scorer-8-tick-8{
+  transform: rotate(80deg);
+}
+.scorer-sub-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 130px;
+  height: 2px;
+  transform-origin: right center;
+  border-left:10px solid #494a4c;
+  z-index:10;
+}
+#scorer-8-sub-tick-1{
+  transform: rotate(-50deg);
+}
+#scorer-8-sub-tick-2{
+  transform: rotate(-30deg);
+}
+#scorer-8-sub-tick-3{
+  transform: rotate(-10deg);
+}
+#scorer-8-sub-tick-4{
+  transform: rotate(10deg);
+}
+#scorer-8-sub-tick-5{
+  transform: rotate(30deg);
+}
+#scorer-8-sub-tick-6{
+  transform: rotate(50deg);
+}
+#scorer-8-sub-tick-7{
+  transform: rotate(70deg);
+}
+#scorer-8-sub-tick-8{
+ transform: rotate(90deg);
+ background-color: #494a4c;
+ opacity: 0.3;
+}
+
+.scorer-8-reverse-tick{
+  position: absolute;
+  bottom: 50%;
+  left: 0px;
+  width: 125px;
+  height: 5px;
+  transform-origin: right center;
+  border-left:15px solid #696a6d;
+  z-index: 10;
+}
+
+.top-reverse-ticks{
+  animation-name: top-reverse-tick-z-index-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.bottom-reverse-ticks{
+  animation-name: bottom-reverse-tick-z-index-8;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#scorer-8-reverse-tick-1{
+  transform: rotate(105deg);
+}
+
+#scorer-8-reverse-tick-2{
+  transform: rotate(120deg);
+}
+
+#scorer-8-reverse-tick-3{
+  transform: rotate(135deg);
+}
+
+#scorer-8-reverse-tick-4{
+  transform: rotate(150deg);
+}
+
+#scorer-8-reverse-tick-5{
+  transform: rotate(165deg);
+}
+
+#scorer-8-reverse-tick-6{
+  transform: rotate(180deg);
+}
+
+#scorer-8-reverse-tick-7{
+  transform: rotate(195deg);
+}
+
+#scorer-8-reverse-tick-8{
+  transform: rotate(210deg);
+}
+
+#scorer-8-reverse-tick-9{
+  transform: rotate(225deg);
+}
+
+#scorer-8-reverse-tick-10{
+  z-index: 16;
+  transform: rotate(240deg);
+  background-color: #494a4c;
+  opacity: 1;
+  height: 2px;
+}
+
+.scorer-8-text{
+  position: absolute;
+  bottom: -25px;
+  left: 10px;
+  color: #bdbebf; 
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+#scorer-8-number p{
+   position: absolute;
+  width: 30%;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid #3eedf2;
+  bottom: 10%;
+  left: 33%;
+  color: #696a6d; 
 }
 
 @keyframes fill-div-8 {
@@ -1211,18 +1040,22 @@
     border-top-color: transparent;
     visibility: visible;
     transform-origin:bottom center;
-    transform: rotate(195deg);
+    transform: rotate(180deg);
   }
 }
 @keyframes kwh-shadow-div-8 {
-  
+  9%{
+    left: 0px;
+  }
   10% {
     border-top-color: transparent;
     border-left-color: black;
     transform-origin: bottom center;
     transform: rotate(180deg);
+    left: 0px;
   }
   11% {
+    left: -1px;
     border-top-color: black;
     border-left-color: #FA543F;
     transform-origin: bottom center;
@@ -1233,20 +1066,24 @@
     border-left-color: #FA543F;
     transform-origin: bottom center;
     transform: rotate(135deg);
+    left: -1px;
     
   }
   71%{
+    left: 2px;
     border-top-color: transparent;
     border-left-color: black;
     transform-origin: bottom center;
     transform: rotate(180deg);
   }
   75%{
+    left: 2px;
     transform-origin: bottom center;
     transform: rotate(180deg);
 
   }
    76%{
+     left: -3px;
     transform-origin: bottom center;
     transform: rotate(135deg);
  
@@ -1280,9 +1117,99 @@
   75% {
     transform-origin: right center;
     transform: rotate(180deg);
+    background-color: #FA543F;
+  }
+  76%{
+    background-color: #59d63e;
   }
   100% {
+    background-color: #59d63e;
     transform-origin:right center;
-    transform: rotate(240deg);
+    transform: rotate(225deg);
   }
+}
+
+@keyframes top-reverse-tick-z-index-8{
+  
+  0% {
+    z-index: 10;
+  }
+  11% {
+   z-index: 10;
+  }
+  70%{
+   z-index: 10;
+    
+  }
+  71%{
+   z-index: 18;
+  }
+  75%{
+    z-index: 18;
+  }
+   76%{
+   z-index: 18;
+ 
+  }
+  100% {
+    z-index: 18;
+  }
+}
+
+@keyframes bottom-reverse-tick-z-index-8{
+  
+  0% {
+    z-index: 18;
+  }
+  11% {
+   z-index: 18;
+  }
+  70%{
+   z-index: 18;
+    
+  }
+  71%{
+   z-index: 18;
+  }
+  75%{
+    z-index: 18;
+  }
+   76%{
+   z-index: 18;
+ 
+  }
+  100% {
+    z-index: 10;
+    
+  }
+}
+
+
+#inner-circle-8{
+  z-index: 25;
+  width: 140px;
+  height: 140px;
+  top: 70px;
+  left: 70px;
+  border-top-left-radius: 360px;
+  border-top-right-radius: 360px;
+  border-radius:50%;
+  border: 4px solid #494a4c;
+  position: relative;
+  background-color: #000000;
+}
+#tesla-logo{
+  width: 80px;height:80px;
+  width: 70%;
+  padding-left: 15%;
+  height: 70%;
+  padding-top: 15%;
+  height: auto;
+  margin: 0;
+}
+#speed-kmph-8{
+  color:#fff;
+  width: 20%;
+  height: 10%;
+  font-size: 30px;
 }
