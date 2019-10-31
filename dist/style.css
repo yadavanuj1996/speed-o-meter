@@ -644,7 +644,6 @@
   background-color: #000000;
 }
 #scorer-7-sub-tick-7{
-  z-index: 15;
   position: absolute;
   bottom: 50%;
   left: 0px;
@@ -1089,7 +1088,7 @@
   width: 259px;
   height: 135px;
   background: transparent;
-  left: -2px;
+  left: 0px;
   top:-10px;
   border: 10px solid #000000;
   border-top-left-radius: 360px;
@@ -1242,9 +1241,20 @@
     transform-origin: bottom center;
     transform: rotate(180deg);
   }
-  100% {
+  75%{
     transform-origin: bottom center;
     transform: rotate(180deg);
+
+  }
+   76%{
+    transform-origin: bottom center;
+    transform: rotate(135deg);
+ 
+  }
+  100% {
+    transform-origin: bottom center;
+    transform: rotate(135deg);
+    left:-3px;
     
   }
 }
